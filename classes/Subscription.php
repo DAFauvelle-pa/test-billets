@@ -9,7 +9,7 @@ class Subscription {
     public $active;
 
     // Constructor
-    public function __construct(Datetime $start_date, Datetime $end_date,int $user_id, int $bundle_id, int $Id = null, bool $active, $duration = null) {
+    public function __construct(Datetime $start_date, Datetime $end_date,int $user_id, int $bundle_id, $Id = null, $active = null, $duration = null) {
         // create a new product on startup
         $this->start_date = $start_date->format('Y-m-d H:i:s');
         if($duration) {
